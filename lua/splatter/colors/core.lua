@@ -1,4 +1,4 @@
----@cass Palette
+---@class Palette
 local ret = {
 	surface0="#FFFFFF",
 	surface50="#f3f2f1",
@@ -11,6 +11,7 @@ local ret = {
 	surface700="#252423",
 	surface800="#1b1a19",
 	surface900="#11100f",
+	surface1000="#000000",
 	gray50="#f3f2f1",
 	gray100="#e1dfdd",
 	gray200="#bebbb8",

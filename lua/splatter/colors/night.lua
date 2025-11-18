@@ -1,21 +1,22 @@
 local Core = require("splatter.colors.core")
 
----@cass Palette
+---@class ThemePalette
 local ret = {
-	bg="",
-	fg="",
-	bg_hover="",
-	fg_hover="",
-	border="",
-	border_hover="",
-	primary="",
-	secondary="",
-	alt="",
+	bg=Core.surface900,
+	fg=Core.surface0,
+	bg_hover=Core.surface700,
+	fg_hover=Core.surface100,
+	border=Core.purple800,
+	border_hover=Core.purple700,
+	primary=Core.purple500,
+	secondary=Core.pink300,
+	alt=Core.indigo400,
 	full=Core,
+	comment=Core.surface500,
 	git = {
-		add = "#9ECE6A",
-		change = "#E0AF68",
-		delete = "#FF007C",
+		add = Core.green300,
+		change = Core.yellow300,
+		delete = Core.red300
 	}
 }
 return ret
