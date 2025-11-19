@@ -22,7 +22,7 @@ M.defaults = {
 	},
 	day_brightness = 0.3,
 	lualine_bold = false,
-	transaparent = false,
+	transparent = false,
 
 	---@param colors ColorScheme
 	on_colors = function(colors) end,

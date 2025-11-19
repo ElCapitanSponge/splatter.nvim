@@ -6,8 +6,8 @@ M.url = "https://github.com/folke/lazy.nvim"
 function M.get(c, opts)
 	-- stylua: ignore
 	return {
-		LazyProgressDone = { bold = true, fg = c.magenta2 },
-		LazyProgressTodo = { bold = true, fg = c.fg_gutter },
+		LazyProgressDone = { bold = true, fg = c.secondary },
+		LazyProgressTodo = { bold = true, fg = c.fg_hover },
 	}
 end
 
