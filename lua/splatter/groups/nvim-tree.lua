@@ -6,19 +6,19 @@ M.url = "https://github.com/kyazdani42/nvim-tree.lua"
 function M.get(c, opts)
 	-- stylua: ignore
 	return {
-		NvimTreeFolderIcon   = { bg = c.none, fg = c.full.blue200 },
-		NvimTreeGitDeleted   = { fg = c.git.delete },
-		NvimTreeGitDirty     = { fg = c.git.change },
-		NvimTreeGitNew       = { fg = c.git.add },
-		NvimTreeImageFile    = { fg = c.fg_sidebar },
-		NvimTreeIndentMarker = { fg = c.fg_hover },
-		NvimTreeNormal       = { fg = c.fg_sidebar, bg = c.bg_hover },
-		NvimTreeNormalNC     = { fg = c.fg_sidebar, bg = c.bg_hover },
-		NvimTreeOpenedFile   = { bg = c.bg_hover },
-		NvimTreeRootFolder   = { fg = c.full.blue200, bold = true },
-		NvimTreeSpecialFile  = { fg = c.full.purple200, underline = true },
-		NvimTreeSymlink      = { fg = c.full.blue200 },
-		NvimTreeWinSeparator = { fg = opts.styles.sidebars == "transparent" and c.border or c.bg_hover, bg = c.bg_hover },
+		NvimTreeFolderIcon   = { bg = c.bg, fg = c.fg },
+		NvimTreeGitDeleted   = { fg = c.fg },
+		NvimTreeGitDirty     = { fg = c.fg },
+		NvimTreeGitNew       = { fg = c.fg },
+		NvimTreeImageFile    = { fg = c.fg },
+		NvimTreeIndentMarker = { fg = c.fg },
+		NvimTreeNormal       = { fg = c.fg, bg = c.bg },
+		NvimTreeNormalNC     = { fg = c.fg, bg = c.bg },
+		NvimTreeOpenedFile   = { bg = c.bg },
+		NvimTreeRootFolder   = { fg = c.fg, bold = true },
+		NvimTreeSpecialFile  = { fg = c.fg, underline = true },
+		NvimTreeSymlink      = { fg = c.fg },
+		NvimTreeWinSeparator = { fg = opts.styles.sidebars == "transparent" and c.border or c.bg_hover, bg = c.bg },
 	}
 end
 

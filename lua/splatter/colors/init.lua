@@ -35,20 +35,6 @@ function M.setup(opts)
 		text = colors.fg,
 	}
 
-	colors.git.ignore = colors.comments
-	colors.black = colors.full.surface1000
-	colors.border_highlight = colors.bg
-	colors.border = colors.border
-
-	-- Popups and statusline always get a dark background
-	colors.bg_popup = colors.bg_hover
-	colors.bg_statusline = colors.bg
-
-	colors.bg_visual = colors.bg_hover
-	colors.bg_search = colors.bg_hover
-	colors.fg_sidebar = colors.fg_hover
-	colors.fg_float = colors.fg_hover
-
 	colors.error = colors.full.red700
 	colors.todo = colors.full.bluegray500
 	colors.warning = colors.full.yellow400
@@ -58,7 +44,7 @@ function M.setup(opts)
 	-- stylua: ignore
 	--- @class TerminalColors
 	colors.terminal = {
-		black          = colors.black,
+		black          = colors.full.surface1000,
 		black_bright   = colors.bg,
 		red            = colors.full.red800,
 		red_bright     = Util.brighten(colors.full.red800),

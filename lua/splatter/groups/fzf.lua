@@ -6,20 +6,20 @@ M.url = "https://github.com/ibhagwan/fzf-lua"
 function M.get(c)
 	-- stylua: ignore
 	return {
-		FzfLuaBorder        = { fg = c.border_highlight, bg = c.bg_hover },
+		FzfLuaBorder        = { fg = c.fg, bg = c.bg },
 		FzfLuaCursor        = "IncSearch",
-		FzfLuaDirPart       = { fg = c.fg_hover },
+		FzfLuaDirPart       = { fg = c.fg },
 		FzfLuaFilePart      = "FzfLuaFzfNormal",
 		FzfLuaFzfCursorLine = "Visual",
 		FzfLuaFzfNormal     = { fg = c.fg },
-		FzfLuaFzfPointer    = { fg = c.secondary },
-		FzfLuaFzfSeparator  = { fg = c.alt, bg = c.bg_hover },
+		FzfLuaFzfPointer    = { fg = c.fg },
+		FzfLuaFzfSeparator  = { fg = c.fg, bg = c.bg },
 		FzfLuaHeaderBind    = "@punctuation.special",
 		FzfLuaHeaderText    = "Title",
-		FzfLuaNormal        = { fg = c.fg, bg = c.bg_hover },
+		FzfLuaNormal        = { fg = c.fg, bg = c.bg },
 		FzfLuaPath          = "Directory",
-		FzfLuaPreviewTitle  = { fg = c.border_highlight, bg = c.bg_hover },
-		FzfLuaTitle         = { fg = c.primary, bg = c.bg_hover },
+		FzfLuaPreviewTitle  = { fg = c.fg, bg = c.bg },
+		FzfLuaTitle         = { fg = c.fg, bg = c.bg },
 	}
 end
 

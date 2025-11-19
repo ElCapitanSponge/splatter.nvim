@@ -6,12 +6,12 @@ M.url = "https://github.com/vimwiki/vimwiki"
 function M.get(c, opts)
 	-- stylua: ignore
 	local ret = {
-		VimwikiLink = { fg = c.secondary, bg = c.none },
-		VimwikiHeaderChar = { fg = c.primary, bg = c.none },
-		VimwikiHR = { fg = c.alt, bg = c.none },
-		VimwikiList = { fg = c.todo, bg = c.none },
-		VimwikiTag = { fg = c.full.indigo400, bg = c.none },
-		VimwikiMarkers = { fg = c.full.indigo700, bg = c.none },
+		VimwikiLink = { fg = c.fg, bg = c.bg },
+		VimwikiHeaderChar = { fg = c.fg, bg = c.bg },
+		VimwikiHR = { fg = c.fg, bg = c.bg },
+		VimwikiList = { fg = c.fg, bg = c.bg },
+		VimwikiTag = { fg = c.fg, bg = c.bg },
+		VimwikiMarkers = { fg = c.fg, bg = c.bg },
 	}
 	return ret
 end

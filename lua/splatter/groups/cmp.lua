@@ -6,19 +6,19 @@ M.url = "https://github.com/hrsh7th/nvim-cmp"
 function M.get(c, opts)
 	-- stylua: ignore
 	local ret = {
-		CmpDocumentation       = { fg = c.fg, bg = c.bg_hover },
-		CmpDocumentationBorder = { fg = c.border_highlight, bg = c.bg_hover },
-		CmpGhostText           = { fg = c.black },
-		CmpItemAbbr            = { fg = c.fg, bg = c.none },
-		CmpItemAbbrDeprecated  = { fg = c.fg_hover, bg = c.none, strikethrough = true },
-		CmpItemAbbrMatch       = { fg = c.info, bg = c.none },
-		CmpItemAbbrMatchFuzzy  = { fg = c.info, bg = c.none },
-		CmpItemKindCodeium     = { fg = c.terminal.cyan, bg = c.none },
-		CmpItemKindCopilot     = { fg = c.terminal.cyan, bg = c.none },
-		CmpItemKindSupermaven  = { fg = c.terminal.cyan, bg = c.none },
-		CmpItemKindDefault     = { fg = c.fg_hover, bg = c.none },
-		CmpItemKindTabNine     = { fg = c.terminal.cyan, bg = c.none },
-		CmpItemMenu            = { fg = c.comment, bg = c.none },
+		CmpDocumentation       = { fg = c.fg, bg = c.bg },
+		CmpDocumentationBorder = { fg = c.fg, bg = c.bg },
+		CmpGhostText           = { fg = c.fg },
+		CmpItemAbbr            = { fg = c.fg, bg = c.bg },
+		CmpItemAbbrDeprecated  = { fg = c.fg, bg = c.bg, strikethrough = true },
+		CmpItemAbbrMatch       = { fg = c.fg, bg = c.bg },
+		CmpItemAbbrMatchFuzzy  = { fg = c.fg, bg = c.bg },
+		CmpItemKindCodeium     = { fg = c.fg, bg = c.bg },
+		CmpItemKindCopilot     = { fg = c.fg, bg = c.bg },
+		CmpItemKindSupermaven  = { fg = c.fg, bg = c.bg },
+		CmpItemKindDefault     = { fg = c.fg, bg = c.bg },
+		CmpItemKindTabNine     = { fg = c.fg, bg = c.bg },
+		CmpItemMenu            = { fg = c.fg, bg = c.bg },
 	}
 
 	require("splatter.groups.kinds").kinds(ret, "CmpItemKind%s")
